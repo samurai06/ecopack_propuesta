@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="es-VE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Implementación Odoo 19 Enterprise – Ecopack Venezuela</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PORTADA -->
+    <section class="portada">
+        <div class="portada-container">
+            <div class="logos-presentadores">
+                <img src="altix.png" alt="Logo Altix" class="logo-altix">
+                <img src="maximus_1.png" alt="Logo Maximus" class="logo-maximus">
+            </div>
+
+            <div class="portada-contenido">
+                <img src="ECOPACKLOGO.png" alt="Logo Ecopack" class="logo-principal">
+
+                <h1 class="titulo-principal">Propuesta de Implementación<br>Odoo 19 Enterprise</h1>
+                <h2 class="subtitulo-principal">Ecopack Venezuela</h2>
+
+                <p class="portada-descripcion">
+                    Presentado por Altix, con Corporación Maximus 1999 C.A.<br>
+                    como empresa intermediaria tecnológica
+                </p>
+
+                <div class="portada-fecha">
+                    <p>Fecha: 17 / 11 / 2025</p>
+                </div>
+            </div>
+
+            <div class="barra-verde"></div>
+        </div>
+    </section>
+
+    <!-- CONTRAPORTADA / CONTEXTO -->
+    <section class="contraportada">
+        <div class="contenedor">
+            <div class="contraportada-grid">
+                <div class="contraportada-texto">
+                    <h2>Acerca de esta Propuesta</h2>
+                    <p>
+                        La presente propuesta técnica y comercial es presentada por <strong>Altix</strong>,
+                        empresa consultora especializada en implementaciones Odoo, en colaboración con
+                        <strong>Corporación Maximus 1999 C.A.</strong>, empresa venezolana con amplia
+                        experiencia operativa en Odoo y desarrolladora de soluciones de localización
+                        para Venezuela.
+                    </p>
+                    <p>
+                        Este documento detalla la solución integral para <strong>Ecopack Venezuela</strong>,
+                        empresa líder en fabricación de envases plásticos 100% reciclados, que busca
+                        optimizar sus procesos operativos mediante la implementación de Odoo 19 Enterprise,
+                        alineándose con su visión de sostenibilidad, innovación y economía circular.
+                    </p>
+                </div>
+                <div class="contraportada-destacado">
+                    <h3>¿Por qué Odoo para Ecopack?</h3>
+                    <ul>
+                        <li>Integración completa de procesos comerciales, productivos y administrativos</li>
+                        <li>Plataforma escalable que crece con el negocio</li>
+                        <li>Localización específica para Venezuela (contable y nómina)</li>
+                        <li>Visibilidad en tiempo real de costos, inventarios y márgenes</li>
+                        <li>Solución en la nube con Odoo.sh: segura, respaldada y actualizada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÍNDICE -->
+    <section class="indice">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Índice</h2>
+            <div class="indice-grid">
+                <div class="indice-columna">
+                    <ul class="indice-lista">
+                        <li><a href="#resumen-ejecutivo">1. Resumen Ejecutivo</a></li>
+                        <li><a href="#acerca-ecopack">2. Acerca de Ecopack</a></li>
+                        <li><a href="#sobre-empresas">3. Sobre Altix y Corporación Maximus 1999 C.A.</a></li>
+                        <li><a href="#objetivo">4. Objetivo del Proyecto</a></li>
+                        <li><a href="#alcance">5. Alcance Funcional</a></li>
+                        <li><a href="#arquitectura">6. Arquitectura Técnica – Odoo.sh</a></li>
+                        <li><a href="#precios-odoo">7. Modelo de Precios y Licenciamiento Odoo</a></li>
+                    </ul>
+                </div>
+                <div class="indice-columna">
+                    <ul class="indice-lista">
+                        <li><a href="#localizacion">8. Localización Venezuela (Contable y Nómina)</a></li>
+                        <li><a href="#implementacion">9. Servicios de Implementación</a></li>
+                        <li><a href="#inversion-año1">10. Resumen de Inversión Año 1</a></li>
+                        <li><a href="#costos-recurrentes">11. Costos Recurrentes desde Año 2</a></li>
+                        <li><a href="#terminos">12. Términos y Condiciones</a></li>
+                        <li><a href="#cierre">13. Cierre y Próximos Pasos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- 1. RESUMEN EJECUTIVO -->
+        <section id="resumen-ejecutivo" class="seccion-contenido">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">01</span>
+                    <h2 class="titulo-seccion">Resumen Ejecutivo</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p>
+                        <strong>Ecopack Venezuela</strong> es una empresa pionera en la fabricación de envases
+                        plásticos 100% reciclados, comprometida con la economía circular y la sostenibilidad
+                        ambiental. Con productos que cumplen con los más altos estándares de calidad para el
+                        sector alimentario y retail, Ecopack se ha posicionado como referente en innovación
+                        y responsabilidad ecológica en Venezuela.
+                    </p>
+
+                    <p>
+                        La presente propuesta contempla la <strong>implementación integral de Odoo 19 Enterprise</strong>
+                        en la plataforma cloud <strong>Odoo.sh</strong>, abarcando los procesos críticos del negocio:
+                        ventas, CRM, compras, inventario, fabricación (MRP), contabilidad y nómina. La solución
+                        incluye las localizaciones contable y de nómina específicas para Venezuela, desarrolladas
+                        por Corporación Maximus 1999 C.A., garantizando el cumplimiento normativo local.
+                    </p>
+
+                    <div class="caja-resaltado">
+                        <h3>Componentes de la Propuesta:</h3>
+                        <ul>
+                            <li><strong>Licencias Odoo 19 Enterprise:</strong> 20 usuarios</li>
+                            <li><strong>Infraestructura Odoo.sh:</strong> 2 workers, 50 GB de almacenamiento, entorno de pruebas incluido</li>
+                            <li><strong>Localización Contable Venezuela:</strong> Plan de cuentas, impuestos, retenciones y reportes fiscales</li>
+                            <li><strong>Localización de Nómina Venezuela:</strong> Estructuras salariales, prestaciones sociales, utilidades (≈160 empleados)</li>
+                            <li><strong>Servicios de Implementación:</strong> Proyecto llave en mano con metodología por fases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ACERCA DE ECOPACK -->
+        <section id="acerca-ecopack" class="seccion-contenido fondo-claro">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">02</span>
+                    <h2 class="titulo-seccion">Acerca de Ecopack</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p>
+                        <strong>Ecopack Venezuela</strong> es una empresa fabricante de envases plásticos elaborados
+                        con material 100% reciclado post-consumo. Utilizando tecnología de vanguardia y procesos
+                        que cumplen con las normativas internacionales de seguridad alimentaria, Ecopack transforma
+                        residuos plásticos en productos de alto valor agregado, contribuyendo activamente a la
+                        economía circular y la reducción del impacto ambiental.
+                    </p>
+
+                    <p>
+                        Con un firme compromiso hacia la sostenibilidad, Ecopack no solo fabrica envases ecológicos,
+                        sino que también educa y promueve prácticas responsables en la cadena de valor, desde
+                        proveedores hasta consumidores finales. Su portafolio de productos atiende principalmente
+                        al sector alimentos, retail y consumo masivo.
+                    </p>
+
+                    <div class="grid-productos">
+                        <div class="producto-categoria">
+                            <h3>Líneas de Productos</h3>
+                            <ul>
+                                <li>Bandejas para alimentos</li>
+                                <li>Estuches y contenedores</li>
+                                <li>Envases para postres y lácteos</li>
+                                <li>Delipacks para charcutería</li>
+                                <li>Envases termoformados personalizados</li>
+                            </ul>
+                        </div>
+                        <div class="producto-categoria">
+                            <h3>Valores Corporativos</h3>
+                            <ul>
+                                <li>Sostenibilidad ambiental</li>
+                                <li>Innovación y tecnología</li>
+                                <li>Calidad y seguridad alimentaria</li>
+                                <li>Compromiso con la economía circular</li>
+                                <li>Responsabilidad social empresarial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SOBRE ALTIX Y MAXIMUS -->
+        <section id="sobre-empresas" class="seccion-contenido">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">03</span>
+                    <h2 class="titulo-seccion">Sobre Altix y Corporación Maximus 1999 C.A.</h2>
+                </div>
+
+                <div class="empresas-grid">
+                    <div class="empresa-bloque">
+                        <h3>Altix</h3>
+                        <p>
+                            <strong>Altix</strong> es una firma consultora especializada en la implementación
+                            de soluciones Odoo para empresas de diversos sectores. Con un equipo de consultores
+                            funcionales y técnicos certificados, Altix lidera proyectos de transformación digital
+                            basados en Odoo, garantizando adopción exitosa, capacitación efectiva y transferencia
+                            de conocimiento.
+                        </p>
+                        <p>
+                            <strong>Rol en este proyecto:</strong> Altix actuará como líder de la implementación,
+                            coordinando todas las fases del proyecto, desde el análisis de procesos hasta la
+                            capacitación y puesta en marcha del sistema.
+                        </p>
+                    </div>
+
+                    <div class="empresa-bloque">
+                        <h3>Corporación Maximus 1999 C.A.</h3>
+                        <p>
+                            <strong>Corporación Maximus 1999 C.A.</strong> es una empresa venezolana del sector
+                            de consumo masivo que opera Odoo internamente desde hace varios años. A partir de
+                            su experiencia real, Maximus ha desarrollado módulos de localización contable y de
+                            nómina específicos para Venezuela, así como automatizaciones avanzadas en procesos
+                            comerciales, logísticos y de gestión de precios.
+                        </p>
+                        <p>
+                            <strong>Rol en este proyecto:</strong> Corporación Maximus actúa como empresa
+                            intermediaria tecnológica, aportando su experiencia práctica en Odoo, los módulos
+                            de localización venezolana y soporte técnico especializado. Su participación garantiza
+                            que la solución cumpla con las normativas fiscales y laborales vigentes en Venezuela.
+                        </p>
+                        <div class="caja-experiencia">
+                            <h4>Experiencia relevante:</h4>
+                            <ul>
+                                <li>Automatización de procesos comerciales y logísticos en ambiente de alta transaccionalidad</li>
+                                <li>Desarrollo de localización contable para SENIAT (retenciones, libros fiscales, reportes)</li>
+                                <li>Desarrollo de localización de nómina (prestaciones, utilidades, vacaciones, legislación venezolana)</li>
+                                <li>Gestión de dualidad de moneda (VES / USD)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. OBJETIVO DEL PROYECTO -->
+        <section id="objetivo" class="seccion-contenido fondo-claro">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">04</span>
+                    <h2 class="titulo-seccion">Objetivo del Proyecto</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p>
+                        El objetivo principal de este proyecto es <strong>integrar los procesos operativos,
+                        comerciales, productivos y administrativos de Ecopack en una plataforma única y escalable</strong>,
+                        que permita optimizar la gestión, mejorar la toma de decisiones y garantizar el cumplimiento
+                        normativo venezolano.
+                    </p>
+
+                    <div class="objetivos-lista">
+                        <div class="objetivo-item">
+                            <h4>Integración de Procesos</h4>
+                            <p>Consolidar ventas, compras, inventario, fabricación, contabilidad y nómina en un solo sistema, eliminando redundancias y mejorando la eficiencia operativa.</p>
+                        </div>
+                        <div class="objetivo-item">
+                            <h4>Visibilidad y Control</h4>
+                            <p>Mejorar la visibilidad en tiempo real de costos de producción, márgenes de venta, niveles de inventario y flujos de caja, facilitando la toma de decisiones estratégicas.</p>
+                        </div>
+                        <div class="objetivo-item">
+                            <h4>Cumplimiento Normativo</h4>
+                            <p>Garantizar el cumplimiento de las obligaciones fiscales (SENIAT) y laborales (LOTTT, prestaciones sociales, utilidades) mediante localizaciones específicas para Venezuela.</p>
+                        </div>
+                        <div class="objetivo-item">
+                            <h4>Escalabilidad</h4>
+                            <p>Implementar una solución que pueda crecer con Ecopack, soportando nuevas líneas de productos, plantas de producción, usuarios y volúmenes de transacciones.</p>
+                        </div>
+                        <div class="objetivo-item">
+                            <h4>Automatización</h4>
+                            <p>Reducir tareas manuales y repetitivas mediante flujos automatizados de trabajo, notificaciones y reportes programados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ALCANCE FUNCIONAL -->
+        <section id="alcance" class="seccion-contenido">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">05</span>
+                    <h2 class="titulo-seccion">Alcance Funcional</h2>
+                </div>
+
+                <div class="alcance-grid">
+
+                    <div class="modulo-alcance">
+                        <h3>Ventas y CRM</h3>
+                        <ul>
+                            <li>Gestión de oportunidades comerciales y pipeline de ventas</li>
+                            <li>Emisión de cotizaciones y órdenes de venta</li>
+                            <li>Gestión de clientes, contactos y listas de precios</li>
+                            <li>Seguimiento de comisiones y metas de vendedores</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Compras</h3>
+                        <ul>
+                            <li>Gestión de solicitudes de cotización a proveedores</li>
+                            <li>Órdenes de compra y seguimiento de entregas</li>
+                            <li>Gestión de proveedores y condiciones comerciales</li>
+                            <li>Control de acuerdos de precios y descuentos</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Inventario / Almacenes</h3>
+                        <ul>
+                            <li>Gestión multi-almacén y ubicaciones</li>
+                            <li>Movimientos de inventario, transferencias y ajustes</li>
+                            <li>Trazabilidad de lotes y números de serie</li>
+                            <li>Valorización de inventarios (FIFO, promedio ponderado)</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Fabricación (MRP) – 1 Planta</h3>
+                        <ul>
+                            <li>Gestión de listas de materiales (BOM) para productos reciclados</li>
+                            <li>Órdenes de fabricación y planificación de producción</li>
+                            <li>Control de costos de producción (materia prima, mano de obra, indirectos)</li>
+                            <li>Gestión de centros de trabajo y rutas de fabricación</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Contabilidad Base</h3>
+                        <ul>
+                            <li>Asientos contables automáticos desde ventas, compras, inventario y nómina</li>
+                            <li>Conciliación bancaria y gestión de pagos y cobros</li>
+                            <li>Reportes financieros: Balance General, Estado de Resultados, Flujo de Caja</li>
+                            <li>Gestión de centros de costo y analítica contable</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Localización Contable Venezuela</h3>
+                        <ul>
+                            <li>Plan de cuentas adaptado a normativa venezolana</li>
+                            <li>Gestión de impuestos (IVA), retenciones de IVA e ISLR</li>
+                            <li>Libros fiscales: Libro de Ventas, Libro de Compras</li>
+                            <li>Reportes y declaraciones para SENIAT</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Localización de Nómina Venezuela</h3>
+                        <ul>
+                            <li>Estructuras salariales y reglas de cálculo según LOTTT</li>
+                            <li>Cálculo de prestaciones sociales, utilidades, vacaciones, bono vacacional</li>
+                            <li>Gestión de deducciones, préstamos, anticipos y retenciones ISLR</li>
+                            <li>Reportes de nómina para ≈160 empleados y archivos TXT para bancos</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Dualidad de Moneda (VES / USD)</h3>
+                        <ul>
+                            <li>Gestión de transacciones en bolívares (VES) y dólares (USD)</li>
+                            <li>Actualización de tasas de cambio y conversión automática</li>
+                            <li>Reportes financieros en ambas monedas</li>
+                            <li>Cálculo de diferencias cambiarias y su impacto contable</li>
+                        </ul>
+                    </div>
+
+                    <div class="modulo-alcance">
+                        <h3>Facturación Fiscal / SENIAT</h3>
+                        <ul>
+                            <li>Emisión de facturas fiscales con numeración controlada</li>
+                            <li>Cálculo automático de impuestos y retenciones</li>
+                            <li>Generación de reportes para declaraciones fiscales</li>
+                            <li>Integración con libros de compras y ventas</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ARQUITECTURA TÉCNICA -->
+        <section id="arquitectura" class="seccion-contenido fondo-claro">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">06</span>
+                    <h2 class="titulo-seccion">Arquitectura Técnica – Odoo.sh</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p>
+                        La solución propuesta se implementará en <strong>Odoo.sh</strong>, la plataforma cloud
+                        oficial de Odoo. Esta arquitectura en la nube garantiza disponibilidad, seguridad,
+                        respaldos automáticos y escalabilidad sin necesidad de inversión en infraestructura local.
+                    </p>
+
+                    <div class="especificaciones-tecnicas">
+                        <h3>Especificaciones Técnicas</h3>
+                        <div class="grid-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Versión:</span>
+                                <span class="spec-valor">Odoo 19 Enterprise</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Usuarios:</span>
+                                <span class="spec-valor">20 usuarios concurrentes</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Workers:</span>
+                                <span class="spec-valor">2 workers</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Almacenamiento:</span>
+                                <span class="spec-valor">50 GB</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Entornos:</span>
+                                <span class="spec-valor">Producción + Staging (pruebas)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Hosting:</span>
+                                <span class="spec-valor">Cloud administrado por Odoo S.A.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="beneficios-odoo-sh">
+                        <h3>Beneficios de Odoo.sh</h3>
+                        <div class="beneficios-grid">
+                            <div class="beneficio">
+                                <h4>Hosting Administrado</h4>
+                                <p>Odoo S.A. gestiona servidores, actualizaciones de seguridad y disponibilidad, liberando a Ecopack de tareas de infraestructura.</p>
+                            </div>
+                            <div class="beneficio">
+                                <h4>Respaldos Automáticos</h4>
+                                <p>Backups diarios automáticos con retención de 30 días, garantizando la integridad y recuperación de datos.</p>
+                            </div>
+                            <div class="beneficio">
+                                <h4>Entorno de Pruebas</h4>
+                                <p>Ambiente de staging independiente para probar configuraciones, desarrollos y actualizaciones sin afectar producción.</p>
+                            </div>
+                            <div class="beneficio">
+                                <h4>Escalabilidad</h4>
+                                <p>Posibilidad de aumentar usuarios, workers y almacenamiento conforme crezca el negocio, sin interrupciones.</p>
+                            </div>
+                            <div class="beneficio">
+                                <h4>Seguridad</h4>
+                                <p>Certificados SSL, encriptación de datos, firewalls y monitoreo 24/7 gestionados por Odoo.</p>
+                            </div>
+                            <div class="beneficio">
+                                <h4>Actualizaciones</h4>
+                                <p>Acceso a actualizaciones y mejoras de Odoo Enterprise sin costos adicionales durante la vigencia de la suscripción.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. MODELO DE PRECIOS ODOO -->
+        <section id="precios-odoo" class="seccion-contenido">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">07</span>
+                    <h2 class="titulo-seccion">Modelo de Precios y Licenciamiento Odoo</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p>
+                        La inversión para este proyecto se estructura en <strong>tres bloques principales</strong>:
+                    </p>
+                    <ol class="lista-bloques">
+                        <li><strong>Odoo (Licencias + Odoo.sh):</strong> Suscripción anual a licencias de usuario y plataforma cloud.</li>
+                        <li><strong>Localización Venezuela:</strong> Módulos de localización contable y de nómina específicos para Venezuela.</li>
+                        <li><strong>Servicios de Implementación:</strong> Proyecto llave en mano que incluye análisis, configuración, parametrización, pruebas y capacitación.</li>
+                    </ol>
+
+                    <div class="tabla-wrapper">
+                        <table class="tabla-precios">
+                            <thead>
+                                <tr>
+                                    <th>Bloque</th>
+                                    <th>Detalle</th>
+                                    <th>Monto (USD)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Odoo – Licencias + Odoo.sh (Año 1)</td>
+                                    <td>20 usuarios, 2 workers, 50 GB, staging incluido</td>
+                                    <td class="monto">4.291,20</td>
+                                </tr>
+                                <tr>
+                                    <td>Localización Contable Venezuela</td>
+                                    <td>Licencia por BD + parametrización inicial</td>
+                                    <td class="monto">6.000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Localización Nómina Venezuela</td>
+                                    <td>Licencia por BD + parametrización (≈160 empleados)</td>
+                                    <td class="monto">6.000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Implementación</td>
+                                    <td>Proyecto llave en mano (metodología por fases)</td>
+                                    <td class="monto">12.000,00</td>
+                                </tr>
+                                <tr class="fila-total">
+                                    <td colspan="2"><strong>Total Inversión Año 1</strong></td>
+                                    <td class="monto"><strong>28.291,20</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="nota-tabla">
+                        <strong>Nota:</strong> Los montos están expresados en dólares estadounidenses (USD).
+                        El monto de Odoo (licencias + Odoo.sh) del Año 1 incluye un descuento promocional
+                        aplicado por Odoo S.A. para nuevos clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. LOCALIZACIÓN VENEZUELA -->
+        <section id="localizacion" class="seccion-contenido fondo-claro">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">08</span>
+                    <h2 class="titulo-seccion">Localización Venezuela (Contable y Nómina)</h2>
+                </div>
+
+                <div class="localizacion-grid">
+
+                    <div class="localizacion-bloque">
+                        <div class="localizacion-header">
+                            <h3>Localización Contable Venezuela</h3>
+                            <span class="precio-localizacion">USD 6.000,00</span>
+                        </div>
+                        <p>
+                            Módulo desarrollado por Corporación Maximus 1999 C.A. que adapta la contabilidad
+                            de Odoo a las normativas fiscales venezolanas, garantizando cumplimiento con SENIAT
+                            y facilitando la gestión de impuestos, retenciones y libros fiscales.
+                        </p>
+                        <h4>Incluye:</h4>
+                        <ul>
+                            <li><strong>Plan de Cuentas Venezolano:</strong> Estructura contable adaptada a la normativa local y mejores prácticas.</li>
+                            <li><strong>Impuestos y Retenciones:</strong> Configuración de IVA (16%), retenciones de IVA (75%, 100%) y retenciones de ISLR según tabulador.</li>
+                            <li><strong>Libro de Ventas y Compras:</strong> Generación automática de libros fiscales para declaraciones mensuales.</li>
+                            <li><strong>Reportes SENIAT:</strong> Formatos de reportes requeridos para declaraciones de IVA, retenciones y otros tributos.</li>
+                            <li><strong>Parametrización Inicial:</strong> Configuración del plan de cuentas, impuestos, retenciones y políticas contables para Ecopack.</li>
+                            <li><strong>Documentación y Capacitación:</strong> Sesiones de capacitación al personal contable en el uso del módulo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="localizacion-bloque">
+                        <div class="localizacion-header">
+                            <h3>Localización de Nómina Venezuela</h3>
+                            <span class="precio-localizacion">USD 6.000,00</span>
+                        </div>
+                        <p>
+                            Módulo de nómina que cumple con la Ley Orgánica del Trabajo, los Trabajadores y
+                            Trabajadoras (LOTTT) y normativas laborales venezolanas. Diseñado para gestionar
+                            nóminas de hasta 160 empleados con todos los conceptos requeridos.
+                        </p>
+                        <h4>Incluye:</h4>
+                        <ul>
+                            <li><strong>Estructuras Salariales:</strong> Configuración de salarios, bonos, horas extras, comisiones según LOTTT.</li>
+                            <li><strong>Prestaciones Sociales:</strong> Cálculo automático de prestaciones, anticipos y liquidaciones.</li>
+                            <li><strong>Utilidades:</strong> Cálculo de utilidades conforme a legislación venezolana (mínimo 15 días, máximo 4 meses).</li>
+                            <li><strong>Vacaciones y Bono Vacacional:</strong> Gestión de días de vacaciones, bono vacacional y fraccionamiento.</li>
+                            <li><strong>Deducciones y Retenciones:</strong> SSO, paro forzoso, FAOV, retenciones ISLR, préstamos, anticipos.</li>
+                            <li><strong>Reportes de Nómina:</strong> Recibos de pago, resúmenes de nómina, archivos TXT para bancos, reportes para entes gubernamentales.</li>
+                            <li><strong>Pruebas de Escenarios:</strong> Validación de cálculos con casos reales de Ecopack (≈160 empleados).</li>
+                            <li><strong>Capacitación:</strong> Sesiones de entrenamiento al personal de Recursos Humanos y Nómina.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="nota-localizacion">
+                    <p>
+                        <strong>Importante:</strong> Ambas localizaciones son licencias por base de datos (BD),
+                        con derecho a actualizaciones menores y soporte técnico incluido durante el primer año.
+                        La parametrización inicial garantiza que los módulos estén completamente operativos y
+                        adaptados a las necesidades específicas de Ecopack.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. SERVICIOS DE IMPLEMENTACIÓN -->
+        <section id="implementacion" class="seccion-contenido">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">09</span>
+                    <h2 class="titulo-seccion">Servicios de Implementación</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p>
+                        Los servicios de implementación se ofrecen como un <strong>paquete llave en mano</strong>
+                        con un costo fijo de <strong>USD 12.000,00</strong>. Este monto equivale a aproximadamente
+                        400 horas de consultoría a una tarifa efectiva de USD 30/hora, pero se presenta como
+                        proyecto cerrado para facilitar la planificación presupuestaria de Ecopack.
+                    </p>
+
+                    <div class="caja-implementacion">
+                        <h3>Inversión en Implementación</h3>
+                        <p class="monto-implementacion">USD 12.000,00</p>
+                        <p class="descripcion-implementacion">Proyecto completo, desde análisis hasta salida en vivo</p>
+                    </div>
+
+                    <h3 class="subtitulo-fases">Metodología por Fases</h3>
+                    <p>
+                        La implementación se ejecutará siguiendo una metodología estructurada en fases,
+                        garantizando una transición ordenada, minimizando riesgos y asegurando la adopción
+                        exitosa del sistema por parte de los usuarios de Ecopack.
+                    </p>
+
+                    <div class="fases-grid">
+
+                        <div class="fase">
+                            <div class="fase-numero">Fase 0</div>
+                            <h4>Análisis y Diseño de Procesos</h4>
+                            <ul>
+                                <li>Levantamiento de procesos actuales de Ecopack (as-is)</li>
+                                <li>Diseño de procesos optimizados en Odoo (to-be)</li>
+                                <li>Definición de flujos de trabajo, roles y permisos</li>
+                                <li>Elaboración de documento de alcance y cronograma detallado</li>
+                            </ul>
+                        </div>
+
+                        <div class="fase">
+                            <div class="fase-numero">Fase 1</div>
+                            <h4>Base Administrativa y Contable</h4>
+                            <ul>
+                                <li>Configuración de empresa, usuarios y permisos</li>
+                                <li>Parametrización del plan de cuentas y políticas contables</li>
+                                <li>Configuración de impuestos, retenciones y libros fiscales</li>
+                                <li>Carga inicial de maestros: clientes, proveedores, productos</li>
+                            </ul>
+                        </div>
+
+                        <div class="fase">
+                            <div class="fase-numero">Fase 2</div>
+                            <h4>Nómina VE</h4>
+                            <ul>
+                                <li>Parametrización de estructuras salariales y conceptos de nómina</li>
+                                <li>Configuración de reglas de prestaciones, utilidades y vacaciones</li>
+                                <li>Carga de datos de empleados (≈160)</li>
+                                <li>Pruebas de cálculo de nómina con escenarios reales</li>
+                            </ul>
+                        </div>
+
+                        <div class="fase">
+                            <div class="fase-numero">Fase 3</div>
+                            <h4>Fabricación (MRP, 1 planta)</h4>
+                            <ul>
+                                <li>Configuración de centros de trabajo y rutas de fabricación</li>
+                                <li>Creación de listas de materiales (BOM) para productos reciclados</li>
+                                <li>Parametrización de órdenes de fabricación y control de costos</li>
+                                <li>Integración con inventario y contabilidad para valorización de producción</li>
+                            </ul>
+                        </div>
+
+                        <div class="fase">
+                            <div class="fase-numero">Fase 4</div>
+                            <h4>Dualidad de Moneda y Fiscal</h4>
+                            <ul>
+                                <li>Configuración de monedas (VES / USD) y tasas de cambio</li>
+                                <li>Parametrización de facturación fiscal y numeración controlada</li>
+                                <li>Integración completa de todos los módulos</li>
+                                <li>Pruebas integrales de flujos end-to-end</li>
+                            </ul>
+                        </div>
+
+                        <div class="fase">
+                            <div class="fase-numero">Fase 5</div>
+                            <h4>Capacitación y Salida en Vivo</h4>
+                            <ul>
+                                <li>Sesiones de capacitación por módulo a usuarios finales</li>
+                                <li>Elaboración de manuales de usuario y documentación</li>
+                                <li>Acompañamiento en paralelo operativo (sistema antiguo vs. Odoo)</li>
+                                <li>Salida en vivo (go-live) y soporte post-implementación inicial</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="nota-fases">
+                        <p>
+                            <strong>Nota:</strong> El cronograma estimado para completar todas las fases es de
+                            <strong>12 a 16 semanas</strong>, dependiendo de la disponibilidad del equipo de
+                            Ecopack y la complejidad de los procesos actuales. Se establecerán hitos de revisión
+                            al finalizar cada fase para validar avances y ajustar el plan según sea necesario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. RESUMEN INVERSIÓN AÑO 1 -->
+        <section id="inversion-año1" class="seccion-contenido fondo-verde">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">10</span>
+                    <h2 class="titulo-seccion">Resumen de Inversión Año 1</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p class="intro-inversion">
+                        A continuación se presenta el resumen consolidado de la inversión total requerida
+                        para el Año 1, que incluye licencias, infraestructura, localizaciones y servicios
+                        de implementación completos.
+                    </p>
+
+                    <div class="tabla-wrapper-destacada">
+                        <table class="tabla-inversion">
+                            <thead>
+                                <tr>
+                                    <th>Concepto</th>
+                                    <th>Monto (USD)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Odoo (Licencias + Odoo.sh – Año 1)</td>
+                                    <td class="monto">4.291,20</td>
+                                </tr>
+                                <tr>
+                                    <td>Localización Contable Venezuela</td>
+                                    <td class="monto">6.000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Localización Nómina Venezuela</td>
+                                    <td class="monto">6.000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Servicios de Implementación</td>
+                                    <td class="monto">12.000,00</td>
+                                </tr>
+                                <tr class="fila-total-principal">
+                                    <td><strong>Total Inversión Año 1</strong></td>
+                                    <td class="monto"><strong>28.291,20</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="caja-total-redondeado">
+                        <p class="label-redondeado">Total estimado Año 1 (redondeado):</p>
+                        <p class="valor-redondeado">USD 28.300,00</p>
+                    </div>
+
+                    <div class="notas-inversion">
+                        <h4>Notas Importantes:</h4>
+                        <ul>
+                            <li>El monto de Odoo (Año 1) incluye descuento promocional para nuevos clientes aplicado por Odoo S.A.</li>
+                            <li>Las localizaciones (Contable y Nómina) son pagos únicos con derecho a actualizaciones menores y soporte durante el primer año.</li>
+                            <li>Los servicios de implementación son un paquete cerrado que cubre desde el análisis hasta el go-live.</li>
+                            <li>Todos los montos están expresados en dólares estadounidenses (USD).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. COSTOS RECURRENTES AÑO 2 -->
+        <section id="costos-recurrentes" class="seccion-contenido">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">11</span>
+                    <h2 class="titulo-seccion">Costos Recurrentes desde Año 2</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p>
+                        A partir del <strong>Año 2</strong>, la inversión recurrente se centra exclusivamente
+                        en la renovación de las licencias Odoo Enterprise y la suscripción a Odoo.sh. Las
+                        localizaciones (Contable y Nómina) y los servicios de implementación son pagos únicos
+                        que ya fueron cubiertos en el Año 1.
+                    </p>
+
+                    <div class="recurrentes-grid">
+                        <div class="recurrente-bloque">
+                            <h3>Licencias Odoo 19 Enterprise</h3>
+                            <p class="descripcion-recurrente">20 usuarios, sin descuento promocional</p>
+                            <p class="monto-recurrente">USD 3.264,00 / año</p>
+                            <p class="detalle-recurrente">aprox. USD 163,20 por usuario/año</p>
+                        </div>
+
+                        <div class="recurrente-bloque">
+                            <h3>Odoo.sh</h3>
+                            <p class="descripcion-recurrente">2 workers, 50 GB, 1 entorno de pruebas</p>
+                            <p class="monto-recurrente">USD 1.675,20 / año</p>
+                            <p class="detalle-recurrente">Hosting administrado con backups y seguridad</p>
+                        </div>
+                    </div>
+
+                    <div class="total-recurrente">
+                        <p class="label-total-recurrente">Total Recurrente Estimado (Odoo + Odoo.sh):</p>
+                        <p class="monto-total-recurrente">USD 4.939,20 / año</p>
+                    </div>
+
+                    <div class="aclaraciones-recurrentes">
+                        <h4>Aclaraciones:</h4>
+                        <ul>
+                            <li>Los montos indicados son estimaciones basadas en la estructura de precios actual de Odoo S.A. y pueden variar según políticas comerciales futuras.</li>
+                            <li>Las <strong>localizaciones</strong> (Contable y Nómina) son licencias perpetuas por base de datos. No requieren renovación anual, aunque se recomienda considerar un contrato de mantenimiento opcional.</li>
+                            <li>La <strong>implementación</strong> es un pago único. No hay costos recurrentes asociados, salvo que se requieran servicios de consultoría adicionales.</li>
+                            <li>Se sugiere considerar un <strong>servicio de mantenimiento anual opcional</strong> (a cotizar por separado) que cubra:
+                                <ul>
+                                    <li>Soporte técnico especializado</li>
+                                    <li>Actualizaciones de localizaciones ante cambios normativos</li>
+                                    <li>Optimización y ajustes menores</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. TÉRMINOS Y CONDICIONES -->
+        <section id="terminos" class="seccion-contenido fondo-claro">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">12</span>
+                    <h2 class="titulo-seccion">Términos y Condiciones</h2>
+                </div>
+
+                <div class="contenido-texto">
+
+                    <div class="termino-item">
+                        <h3>Moneda</h3>
+                        <p>Todos los montos expresados en esta propuesta están en <strong>dólares estadounidenses (USD)</strong>.</p>
+                    </div>
+
+                    <div class="termino-item">
+                        <h3>Forma de Pago Sugerida</h3>
+                        <p>Para facilitar el flujo del proyecto y alinear los pagos con los hitos de avance, se sugiere el siguiente esquema:</p>
+                        <ul>
+                            <li><strong>40%</strong> a la firma del contrato (USD 11.316,48)</li>
+                            <li><strong>40%</strong> al finalizar la Fase 3 – MRP operativo en ambiente de pruebas (USD 11.316,48)</li>
+                            <li><strong>20%</strong> al cierre del go-live y aceptación formal del sistema (USD 5.658,24)</li>
+                        </ul>
+                        <p class="nota-termino">Este esquema puede ser ajustado según las políticas financieras de Ecopack, previa coordinación.</p>
+                    </div>
+
+                    <div class="termino-item">
+                        <h3>Vigencia de la Propuesta</h3>
+                        <p>La presente propuesta tiene una vigencia de <strong>30 días calendario</strong> a partir de la fecha de emisión. Pasado este período, los montos y condiciones podrán ser revisados.</p>
+                    </div>
+
+                    <div class="termino-item">
+                        <h3>Exclusiones</h3>
+                        <p>La propuesta <strong>NO incluye</strong>:</p>
+                        <ul>
+                            <li>Hardware, servidores locales, equipos de cómputo o dispositivos móviles</li>
+                            <li>Impresoras fiscales o equipos de punto de venta (POS) especializados</li>
+                            <li>Integraciones con sistemas externos no mencionados explícitamente en el alcance (ej: CRM externos, plataformas de e-commerce, servicios de terceros)</li>
+                            <li>Desarrollo de funcionalidades adicionales o módulos personalizados fuera del alcance definido</li>
+                            <li>Servicios de consultoría posteriores al go-live (disponibles bajo contrato de mantenimiento opcional)</li>
+                            <li>Costos de conectividad, internet o telecomunicaciones</li>
+                        </ul>
+                    </div>
+
+                    <div class="termino-item">
+                        <h3>Condiciones Generales</h3>
+                        <ul>
+                            <li>El cronograma del proyecto dependerá de la disponibilidad del equipo de Ecopack para reuniones, validaciones y pruebas.</li>
+                            <li>Ecopack deberá proveer acceso a la información necesaria (procesos actuales, datos maestros, políticas internas) para la correcta parametrización del sistema.</li>
+                            <li>Cualquier cambio en el alcance durante la implementación será evaluado y podrá generar ajustes en tiempos y costos, sujeto a aprobación de Ecopack.</li>
+                            <li>Los servicios de capacitación serán impartidos en español, de forma presencial y/o remota según se acuerde.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. CIERRE Y PRÓXIMOS PASOS -->
+        <section id="cierre" class="seccion-contenido seccion-cierre">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="numero-seccion">13</span>
+                    <h2 class="titulo-seccion">Cierre y Próximos Pasos</h2>
+                </div>
+
+                <div class="contenido-texto">
+                    <p class="parrafo-agradecimiento">
+                        Agradecemos la oportunidad de presentar esta propuesta a <strong>Ecopack Venezuela</strong>.
+                        Estamos convencidos de que la implementación de Odoo 19 Enterprise, combinada con nuestras
+                        localizaciones especializadas y una metodología probada, impulsará la eficiencia operativa,
+                        la visibilidad de gestión y el crecimiento sostenible de la empresa.
+                    </p>
+
+                    <p>
+                        Tanto <strong>Altix</strong> como <strong>Corporación Maximus 1999 C.A.</strong> están
+                        comprometidos con el éxito de este proyecto, aportando experiencia, conocimiento del
+                        contexto venezolano y un acompañamiento cercano en cada etapa.
+                    </p>
+
+                    <div class="proximos-pasos-bloque">
+                        <h3>Próximos Pasos Sugeridos</h3>
+                        <ol class="pasos-lista">
+                            <li>
+                                <strong>Reunión de Revisión de la Propuesta:</strong>
+                                Coordinar una sesión con el equipo directivo de Ecopack para aclarar dudas,
+                                profundizar en aspectos técnicos y validar el alcance propuesto.
+                            </li>
+                            <li>
+                                <strong>Ajuste Final de Alcance y Cronograma:</strong>
+                                Confirmar los detalles operativos, definir el equipo de trabajo de Ecopack
+                                y establecer el cronograma definitivo del proyecto.
+                            </li>
+                            <li>
+                                <strong>Formalización del Contrato:</strong>
+                                Preparar y firmar el acuerdo de servicios, estableciendo roles, responsabilidades
+                                y compromisos de ambas partes.
+                            </li>
+                            <li>
+                                <strong>Confirmación de Fecha de Inicio:</strong>
+                                Definir la fecha de inicio oficial del proyecto (Fase 0 – Análisis y Diseño de Procesos).
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="contacto-cierre">
+                        <h3>Contacto</h3>
+                        <p>
+                            Para cualquier consulta, aclaración o para coordinar los próximos pasos,
+                            no dude en contactarnos. Estamos a su disposición para acompañar a Ecopack
+                            en este importante paso hacia la transformación digital.
+                        </p>
+                    </div>
+
+                    <div class="firma-cierre">
+                        <p><strong>Altix</strong> y <strong>Corporación Maximus 1999 C.A.</strong></p>
+                        <p>Equipo de Implementación Odoo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-logos">
+                <img src="altix.png" alt="Logo Altix" class="footer-logo">
+                <img src="maximus_1.png" alt="Logo Maximus" class="footer-logo">
+                <img src="ECOPACKLOGO.png" alt="Logo Ecopack" class="footer-logo">
+            </div>
+            <p class="footer-texto">
+                Propuesta de Implementación Odoo 19 Enterprise – Ecopack Venezuela | 2025
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
